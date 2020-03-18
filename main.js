@@ -1,6 +1,6 @@
 let i = 0; //Starting point
 const images = [];
-const time = 6000; //time between slides
+const time = 2000; //time between slides
 
 // image list
 images[0] = 'image1.png';
@@ -18,7 +18,7 @@ function changeImg() {
         i = 0;
     }
 
-    setTimeout("changeImg(), time");
+    setTimeout("changeImg()", time);
 }
 
 window.onload = changeImg;
